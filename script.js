@@ -101,7 +101,7 @@ function theItemsList() {
         const eachItem = {
           sku: item.id,
           name: item.title,
-          image: item.thumbnail,
+          image: item.thumbnail.replace('-I', '-O'),
         };
         document
           .querySelector('.items')
